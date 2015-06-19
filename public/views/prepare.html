@@ -1,0 +1,14 @@
+<table class="battlefield">
+	<tbody>
+		<tr ng-repeat="row in prepareCtrl.rows track by $index">
+			<td ng-repeat="col in prepareCtrl.cols track by $index"
+				ng-click="prepareCtrl.add($index, $parent.$index)">
+				{{prepareCtrl.battlefield[$index][$parent.$index]}}
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<button ng-class="{active : prepareCtrl.isSelected(boat)}" ng-repeat="boat in prepareCtrl.fleet track by $index" ng-click="prepareCtrl.selectBoat(boat)">Bateau {{prepareCtrl.fleet[$index].id}}</button>
+<button ng-click="prepareCtrl.resetBoat()">Reset</button>
+<button ng-show="prepareCtrl.checkReady()">Save</button>

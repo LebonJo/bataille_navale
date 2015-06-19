@@ -1,0 +1,32 @@
+<!--pre>{{ homeCtrl.games | json }}</pre-->
+
+<table class="gamesTable">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Nom</th>
+			<th>Email</th>
+			<th>Joueur 1</th>
+			<th>Joueur 2</th>
+			<th>Largeur</th>
+			<th>Hauteur</th>
+			<th>Nb bateaux</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="game in homeCtrl.games | orderBy:'id'">
+			<td>{{ game.id }}</td>
+			<td>{{ game.name }}</td>
+			<td>{{ game.user1.email }}</td>
+			<td>{{ game.user1.pseudo }}</td>
+			<td>{{ game.user2.pseudo }}</td>
+			<td>{{ game.battlefieldSize.width }}</td>
+			<td>{{ game.battlefieldSize.height }}</td>
+			<td>{{ game.fleetSize }}</td>
+			<td class="action">
+				<button ng-if="homeCtrl.showGame(game)" ng-click="homeCtrl.joinGame(game)">Join this game !</button> <!-- on peut encore join les parties où l'on est user1-->
+				<button ng-if="game.user2" ng-click="homeCtrl.prepareGame(game)">Prepare for battle !</button>
+			</td>
+		</tr>
+	</thead>
+</table>

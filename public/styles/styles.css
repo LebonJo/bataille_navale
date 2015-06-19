@@ -1,0 +1,47 @@
+.gamesTable{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.gamesTable th{
+	border : 1px solid black;
+}
+
+.ng-binding{
+	border : 1px solid black;
+	text-align: center;
+}
+
+.action{
+	text-align: center;
+}
+
+.navigation{
+	width: 100%;
+}
+
+.navigation li{
+	display: inline;
+}
+
+html{
+	/*background-image: url("../images/battleship.jpg")*/
+}
+
+.battlefield{
+	border-collapse: collapse;
+}
+
+.battlefield td{
+	border : 2px solid black;
+	width: 100px;
+	height: 100px;
+}
+
+.battlefield td:hover{
+	background-color: red;
+}
+
+.active{
+	background-color: red;
+}

@@ -1,0 +1,26 @@
+<form name="battleshipForm" ng-submit="gameCtrl.addGame(battleshipForm)" novalidate>
+	<p>
+		<label>Nom : <input required name="name" type="text" ng-model="gameCtrl.game.name">
+	</p>
+	<p>
+		<label>Email : <input name="email" type="email" ng-model="gameCtrl.game.user1.email">
+		<span ng-show="battleshipForm.userEmail.$invalid && battleshipForm.$dirty">Tapez un email valide</span>
+	</p>
+	<!--p>
+		<label>Pseudo : <input name="pseudo" type="text" ng-minlength="5" ng-model="gameCtrl.game.user1.pseudo">
+	</p-->
+	<p>
+		<label>Champ de bataille :
+	</p>
+	<p>
+		<label>     en X : 1 < <input name="battlefieldSizeWidth" type="number" min="1" max="10" ng-model="gameCtrl.game.battlefieldSize.width"> < 10
+	</p>
+	<p>
+		<lable>     en Y : 1 < <input name="battlefieldSizeHeight" type="number" min="1" max="10" ng-model="gameCtrl.game.battlefieldSize.height"> < 10
+	</p>
+	<p>
+		<label>Taille de la flotte : <select ng-model="gameCtrl.game.fleetSize" ng-options="fleetSize.value as fleetSize.value for fleetSize in gameCtrl.fleetSizes"></select> bateaux</label>
+	</p>
+	<button type="submit">Créer la partie</button>
+</form>
+<pre>{{ gameCtrl.game | json }}</pre>

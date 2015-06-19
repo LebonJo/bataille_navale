@@ -1,0 +1,63 @@
+{
+  "games": [
+    {
+      "fleetSize": 4,
+      "name": "Partie 1",
+      "user1": {
+        "email": "moi@gmail.com",
+        "pseudo": "JambonNinja"
+      },
+      "battlefieldSize": {
+        "width": 10,
+        "height": 8
+      },
+      "id": 1
+    },
+    {
+      "fleetSize": 2,
+      "name": "Partie 2",
+      "user1": {
+        "email": "jeandoe1@gmail.com",
+        "pseudo": "JeanDoe1"
+      },
+      "battlefieldSize": {
+        "width": 8,
+        "height": 8
+      },
+      "id": 2,
+      "user2": {
+        "pseudo": "JambonNinja"
+      }
+    },
+    {
+      "fleetSize": 3,
+      "name": "Partie 3",
+      "user1": {
+        "email": "jeandoe2@gmail.com",
+        "pseudo": "JeanDoe2"
+      },
+      "battlefieldSize": {
+        "width": 7,
+        "height": 8
+      },
+      "id": 3
+    },
+    {
+      "fleetSize": 1,
+      "name": "Partie 4",
+      "user1": {
+        "email": "jeandoe3@gmail.com",
+        "pseudo": "JeanDoe3"
+      },
+      "user2": {
+        "email": "jeandoe2@gmail.com",
+        "pseudo": "JeanDoe2"
+      },
+      "battlefieldSize": {
+        "width": 4,
+        "height": 5
+      },
+      "id": 4
+    }
+  ]
+}
