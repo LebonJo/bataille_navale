@@ -3,21 +3,6 @@
 		<!-- CONFIG HTML -->
 		<link rel="stylesheet" href="styles/styles.css">
 		<meta charset="UTF-8">
-		<!-- SCRIPTS ANGULAR -->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.js"></script>
-		<!-- APP -->
-		<script src="app/app.js"></script>
-		<!-- CONFIGS -->
-		<script src="app/configs/RouteConfig.js"></script>
-		<!-- SERVICES -->
-		<script src="app/services/GameService.js"></script>
-		<!-- CONTROLLERS -->
-		<script src="app/controllers/HomeController.js"></script>
-		<script src="app/controllers/GameController.js"></script>
-		<script src="app/controllers/PrepareController.js"></script>
-		<!-- DIRECTIVES -->
-		<script src="app/directives/dtaPhoto.js"></script>
 	</head>
 	<body ng-app = "batailleNaval">
 		<header>
@@ -36,5 +21,26 @@
 			<dta-photo border-width="borderWidth"></dta-photo>
 			<input ng-model="borderWidth" type="number"-->
 		</main>
+
+		<!-- SCRIPTS ANGULAR -->
+		<!-- on remplace ces scripts par ceux donnés par bower
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.js"></script>
+		-->
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-route.min.js"></script>
+
+		<!-- APP -->
+		<script src="app/app.js"></script>
+		<!-- CONFIGS -->
+		<script src="app/configs/RouteConfig.js"></script>
+		<!-- SERVICES -->
+		<script src="app/services/GameService.js"></script>
+		<!-- CONTROLLERS -->
+		<script src="app/controllers/HomeController.js"></script>
+		<script src="app/controllers/GameController.js"></script>
+		<script src="app/controllers/PrepareController.js"></script>
+		<!-- DIRECTIVES -->
+		<script src="app/directives/dtaPhoto.js"></script>
 	</body>
 </html>

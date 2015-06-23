@@ -9,6 +9,8 @@ angular.module("batailleNaval")
 	return{
 		version: "1.0",
 
+	    pseudo: "JambonNinja",
+
 		fleetSizes: [
 	    	{value : 1},
 	    	{value : 2},
@@ -16,9 +18,6 @@ angular.module("batailleNaval")
 	    	{value : 4},
 	    	{value : 5},
 	    ],
-
-	    pseudo: "JambonNinja",
-
 		getAllGames: function (){
 			var  GameService = this;
 			return $http.get(apiUrl)
